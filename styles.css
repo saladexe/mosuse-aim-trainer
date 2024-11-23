@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+#start {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#start:hover {
+    background-color: white;
+}
+
+div {
+    background-color: rgba(255, 0, 0, 0.458);
+    border-radius: 8px;
+    border-width: 10%;
+    border-color: rgba(255, 0, 0, 0.76);
+    opacity: 0;
+}
+
+#leftw {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
+#topw {
+    height: 10%;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+#bottomw {
+    height: 10%;
+    width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 90%;
+}
+
+#rightw {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    left: 90%;
+    top: 0;
+}
+
+#one {
+    width: 70vw;
+    height: 100px;
+    position: absolute;
+    top: calc(100vh/3);
+    left: 9.4%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#two {
+    width: 70vw;
+    height: 100px;
+    position: absolute;
+    top: calc(180vh/3);
+    left: 20%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#end {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    position: absolute;
+    /* left: 85%;
+    top: 78%; */
+    left: 100%;
+    top: 100%;
+    cursor: pointer;
+    transition: left 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+}
+
+#end:hover {
+    background-color: white;
+}
+
+#fin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    opacity: 0;
+    user-select: none;
+}
